@@ -11,7 +11,7 @@ exports.registrasi = function(req, res){
         username : req.body.username,
         email : req.body.email,
         password : md5(req.body.password),
-        role : req.body,role,
+        role : req.body.role,
         tanggal_daftar: new Date()
     }
     
